@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Todo List - AgungDL</title>
+
+    <!-- import framework tailwindcss using CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
     <!-- CSS External File -->
     <link rel="stylesheet" href="css\style.css">
@@ -11,15 +14,41 @@
 <body>
     
     <!-- Header Section -->
-    <header></header>
-
+    <header class="text-3xl font-bold mb-4">
+        <h1>My Todo List</h1>
+    </header>
+        
     <!-- Main Content Section -->
-    <main></main>
+    <main>
+        <section class="todo-app my-4">
+            <input type="text" class="border rounded p-2" id="todo-input" placeholder="Add a new task...">
+            <input type="date" class="border rounded p-2" id="todo-date" placeholder="Select due date...">
+            <button onclick="addTask();" class="bg-blue-500 rounded text-white p-2">Add Task</button>
+        </section>
+
+        <!-- Action Button Section -->
+        <section class="flex justify-between my-4">
+            <button class="bg-gray-300 rounded p-2" id="filter-btn">Filter</button>
+            <button class="bg-red-500 rounded  p-2" onclick="deleteAllTasks()">Delete All Tasks</button>
+
+        </section>
+        <section>
+            <h2>List of Task</h2>
+            <ul id="task-list">
+                <!-- Tasks will be dynamically added here -->
+                 <li>No task added yet</li>
+            </ul>
+
+        </section>
+    </main>
 
     <!-- Footer Section -->
-    <footer></footer>
-    
+    <footer>
+        <p>&copy; 2025 AgungDL</p>
+    </footer>
+        
+
     <!-- JavaScript External File -->
     <script src="js\script.js"></script>
 </body>
-</html>2
+</html>
