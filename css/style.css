@@ -44,3 +44,57 @@ body{
   border-radius: 6px;
   cursor: pointer;
 }
+
+#task-list li {
+  transition: all 0.3s ease;
+}
+
+#task-list li:hover {
+  background-color: #e8f0fe;
+  transform: translateX(4px);
+}
+
+.line-through {
+  text-decoration: line-through;
+}
+
+.text-gray-400 {
+  color: #9ca3af;
+}
+
+.text-red-500 {
+  color: #ef4444;
+}
+
+.text-red-700 {
+  color: #b91c1c;
+}
+
+.task-table {
+  width: 100%;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  overflow: hidden;
+  font-family: 'Poppins', sans-serif;
+}
+
+.task-table th {
+  background-color: #f3f4f6;
+  font-weight: 600;
+  color: #374151;
+  text-align: center;
+}
+
+.task-table td, 
+.task-table th {
+  border: 1px solid #e5e7eb;
+}
+
+.task-table tr:hover {
+  background-color: #f9fafb;
+}
+
+.line-through {
+  text-decoration: line-through;
+  color: #9ca3af !important;
+}

@@ -50,10 +50,20 @@
 
         <!-- Display Section -->
         <section>
-            <h2>List of Task <span id="filter-icon" style="display:none;">🔽</span> </h2>
-            <ul id="task-list">
-                <!-- Tasks will be dynamically added here -->
-            </ul>
+            <h2>List of Task <span id="filter-icon" style="display:none;">🔽</span></h2>
+                <table id="task-table" class="task-table w-full mt-3 border-collapse">
+                    <thead>
+                    <tr class="bg-gray-200">
+                        <th class="border p-2 w-12">No</th>
+                        <th class="border p-2">Task</th>
+                        <th class="border p-2 w-32">Tanggal</th>
+                        <th class="border p-2 w-20">Aksi</th>
+                    </tr>
+                    </thead>
+                    <tbody id="task-list">
+                    <!-- Tasks will be dynamically added here -->
+                    </tbody>
+                </table>
         </section>
     </main>
 
