@@ -90,10 +90,6 @@ body{
   border: 1px solid #e5e7eb;
 }
 
-.task-table tr:hover {
-  background-color: #f9fafb;
-}
-
 .line-through {
   text-decoration: line-through;
   color: #9ca3af !important;

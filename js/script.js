@@ -45,9 +45,9 @@ function displayTasks(tasks = tasksDb) {
 
     tasks.forEach((taskObj, index) => {
         const row = document.createElement('tr');
-        row.className = "hover:bg-gray-50 transition";
+        row.className = "hover:bg-gray-100 transition";
 
-        // Mumber Column
+        // Member Column
         const noCell = document.createElement('td');
         noCell.textContent = index + 1;
         noCell.className = "border p-2 text-center";
